@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>KCSTours | Sri Lanka Luxury Tours, Private Chauffeurs & Tailor-Made Holidays</title>
+  <meta name="description" content="Discover Sri Lanka with KCSTours. Tailor-made private chauffeur tours, luxury wildlife safaris, scenic tea train journeys, boutique villas, and airport transfers. Certified Sri Lanka Tourism Partner.">
+  <meta name="keywords" content="Sri Lanka tours, Sri Lanka private driver, Sigiriya tours, Yala safari, Ella scenic train, Sri Lanka holiday packages, Galle fort, Sri Lanka luxury hotels">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KCSTours - Explore Sri Lanka. Your Way.">
+  <meta property="og:description" content="Experience the teardrop island with Sri Lanka's leading bespoke travel partner. 100% customized private journeys.">
+  <meta property="og:image" content="ChatGPT Image Sep 29, 2026, 02_27_34 PM.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="ChatGPT Image Sep 29, 2026, 02_27_34 PM.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Top Utility Bar
+       ========================================================================== -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-contact">
+        <a href="tel:+94771234567"><span>📞</span> +94 77 123 4567</a>
+        <a href="https://wa.me/94771234567?text=Hello%20KCSTours,%20I%20would%20like%20to%20inquire%20about%20a%20Sri%20Lanka%20tour" target="_blank"><span>💬</span> WhatsApp 24/7 Island Concierge</a>
+        <a href="mailto:info@kcstours.com"><span>✉️</span> info@kcstours.com</a>
+      </div>
+      <div class="top-bar-actions">
+        <!-- Language Selector -->
+        <div class="language-selector">
+          <span>🌐</span>
+          <select class="language-select" aria-label="Select Language">
+            <option value="en">English (EN)</option>
+            <option value="de">Deutsch (DE)</option>
+            <option value="fr">Français (FR)</option>
+            <option value="es">Español (ES)</option>
+          </select>
+        </div>
+        <!-- Currency Selector -->
+        <div class="currency-selector">
+          <span>💱</span>
+          <select class="currency-select" aria-label="Select Currency">
+            <option value="USD">USD ($)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="AUD">AUD (A$)</option>
+            <option value="CAD">CAD (C$)</option>
+            <option value="LKR">LKR (Rs)</option>
+          </select>
+        </div>
+        <!-- Admin CMS Link -->
+        <button onclick="app.toggleAdmin()" style="background:transparent; color:#38BDF8; font-size:0.75rem; font-weight:600; cursor:pointer;" title="View Internal CMS Demo">📊 CMS Portal</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Main Sticky Header & Navigation
+       ========================================================================== -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo-link" aria-label="KCSTours Home">
+        <img src="ChatGPT Image Sep 29, 2026, 02_27_34 PM.png" alt="KCSTours - Sri Lanka Tourism Partner" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="#destinations" class="nav-link">Destinations</a>
+        <a href="#toursSection" class="nav-link">Tours & Itineraries</a>
+        <a href="#hotelsSection" class="nav-link">Hotels & Stays</a>
+        <a href="#activitiesSection" class="nav-link">Experiences</a>
+        <a href="#transportSection" class="nav-link">Transport</a>
+        <a href="#customBuilder" class="nav-link" style="color:var(--primary-blue); font-weight:700;">✨ Custom Trip</a>
+        <a href="#travelGuides" class="nav-link">Travel Guide</a>
+        <a href="#aboutSection" class="nav-link">About</a>
+        <a href="#contactSection" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="header-right">
+        <!-- Search Trigger -->
+        <button class="icon-btn" onclick="app.openSearchModal()" title="Search Destinations, Tours, Hotels (Ctrl+K)">
+          <span>🔍</span>
+        </button>
+
+        <!-- Wishlist Button -->
+        <button class="icon-btn" onclick="app.openWishlist()" title="View Saved Tours & Stays">
+          <span>❤️</span>
+          <span class="wishlist-badge">0</span>
+        </button>
+
+        <!-- Primary CTA -->
+        <button class="btn btn-primary btn-sm" onclick="app.scrollToSection('customBuilder')">
+          <span>Plan Your Trip</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="hamburger-btn" onclick="app.openWishlist()" aria-label="Open Navigation Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span>🌴</span>
+          <span>SRI LANKA'S PREMIER TAILOR-MADE TRAVEL PARTNER • SLTDA CERTIFIED</span>
+        </div>
+        <h1 class="hero-title">
+          DISCOVER THE BEAUTY OF <span>SRI LANKA</span>
+        </h1>
+        <p class="hero-subtitle">
+          Explore sun-drenched tropical coasts, ancient citadel kingdoms, untamed wildlife safaris, and misty emerald tea highlands with private dedicated chauffeurs.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-gold btn-lg" onclick="app.scrollToSection('toursSection')">
+            <span>Explore Tour Packages</span>
+            <span>&rarr;</span>
+          </button>
+          <button class="btn btn-outline-white btn-lg" onclick="app.scrollToSection('customBuilder')">
+            <span>✨ Build Custom Itinerary</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Smart Travel Search Engine (Hero Module)
+         ========================================================================== -->
+    <div class="container search-widget-container">
+      <div class="search-widget">
+        <!-- Destination -->
+        <div class="search-field">
+          <label class="search-label" for="searchDestSelect">
+            <span>📍</span> Where do you want to go?
+          </label>
+          <select id="searchDestSelect" class="search-select">
+            <option value="all">All Sri Lanka (Island-wide)</option>
+            <option value="sigiriya">Sigiriya & Cultural Triangle</option>
+            <option value="ella">Ella & Misty Highlands</option>
+            <option value="kandy">Kandy & Central Hills</option>
+            <option value="galle">Galle & Southern Coast</option>
+            <option value="yala">Yala Leopard Safari</option>
+            <option value="mirissa">Mirissa & Whale Coast</option>
+            <option value="nuwara-eliya">Nuwara Eliya Tea Valleys</option>
+            <option value="trincomalee">Trincomalee & East Coast</option>
+          </select>
+        </div>
+
+        <!-- Travel Date / Month -->
+        <div class="search-field">
+          <label class="search-label" for="searchMonthSelect">
+            <span>📅</span> Travel Window
+          </label>
+          <select id="searchMonthSelect" class="search-select">
+            <option>Next 30 Days</option>
+            <option>November 2026</option>
+            <option>December 2026 (Peak)</option>
+            <option>January 2027</option>
+            <option>February 2027</option>
+            <option>March - May 2027</option>
+            <option>Summer 2027</option>
+          </select>
+        </div>
+
+        <!-- Duration & Tour Style -->
+        <div class="search-field">
+          <label class="search-label" for="searchTypeSelect">
+            <span>🧭</span> Tour Style
+          </label>
+          <select id="searchTypeSelect" class="search-select">
+            <option value="all">All Tour Styles</option>
+            <option value="classic">Classic Highlights (7-10 Days)</option>
+            <option value="luxury">Luxury Safari & Beach (10-14 Days)</option>
+            <option value="cultural">Heritage & Temples (5-7 Days)</option>
+            <option value="beach">Coastal & Whales (4-7 Days)</option>
+          </select>
+        </div>
+
+        <!-- Travelers Count -->
+        <div class="search-field">
+          <label class="search-label" for="searchPaxSelect">
+            <span>👥</span> Travelers
+          </label>
+          <select id="searchPaxSelect" class="search-select">
+            <option>2 Adults (Couple)</option>
+            <option>1 Adult (Solo Explorer)</option>
+            <option>Family (2 Adults, 2 Kids)</option>
+            <option>Small Group (4 - 8 Pax)</option>
+            <option>Large Private Group (8+ Pax)</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="btn btn-primary" onclick="app.scrollToSection('toursSection'); showToast('Showing matched Ceylon journeys! 🗺️');">
+          <span>Search Tours</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         Trust & Excellence Strip
+         ========================================================================== -->
+    <div class="trust-strip">
+      <div class="container trust-strip-inner">
+        <div class="trust-stat-item">
+          <div class="trust-stat-icon">🇱🇰</div>
+          <div class="trust-stat-info">
+            <h4>SLTDA Certified</h4>
+            <p>Official Sri Lanka Tourism Partner</p>
+          </div>
+        </div>
+        <div class="trust-stat-item">
+          <div class="trust-stat-icon">⭐</div>
+          <div class="trust-stat-info">
+            <h4>4.95 / 5 Rating</h4>
+            <p>Over 1,400+ International Reviews</p>
+          </div>
+        </div>
+        <div class="trust-stat-item">
+          <div class="trust-stat-icon">🚗</div>
+          <div class="trust-stat-info">
+            <h4>Private Chauffeurs</h4>
+            <p>Dedicated English & Multilingual Guides</p>
+          </div>
+        </div>
+        <div class="trust-stat-item">
+          <div class="trust-stat-icon">🛡️</div>
+          <div class="trust-stat-info">
+            <h4>100% Financial Protection</h4>
+            <p>Flexible Booking & Zero Hidden Fees</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         Section 06 – Popular Destinations
+         ========================================================================== -->
+    <section class="section" id="destinations">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Iconic Ceylon Citadels & Coasts</span>
+          <h2>Explore Sri Lanka’s Top Destinations</h2>
+          <p>From misty mountain peaks and UNESCO royal citadels to untamed savannahs and warm turquoise bays.</p>
+        </div>
+
+        <!-- Region Filter Pills -->
+        <div class="filter-nav" id="destFilterNav">
+          <button class="filter-btn active" onclick="app.filterDestinations('all', this)">All Regions</button>
+          <button class="filter-btn" onclick="app.filterDestinations('cultural', this)">Cultural Triangle & Heritage</button>
+          <button class="filter-btn" onclick="app.filterDestinations('highlands', this)">Misty Hill Country</button>
+          <button class="filter-btn" onclick="app.filterDestinations('coast', this)">Southern & East Coasts</button>
+          <button class="filter-btn" onclick="app.filterDestinations('wildlife', this)">Wildlife & Safari Parks</button>
+        </div>
+
+        <!-- Destinations Grid -->
+        <div class="destinations-grid" id="destinationsGrid">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 07 – Featured Tour Packages
+         ========================================================================== -->
+    <section class="section section-alt" id="toursSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Handcrafted Journeys</span>
+          <h2>Featured Sri Lanka Tour Packages</h2>
+          <p>Every itinerary is 100% customizable. Enjoy private air-conditioned transport, handpicked luxury stays, and dedicated chauffeur-guides.</p>
+        </div>
+
+        <!-- Tour Filter Tabs -->
+        <div class="filter-nav" id="tourFilterNav">
+          <button class="filter-btn active" onclick="app.filterTours('all', this)">All Itineraries</button>
+          <button class="filter-btn" onclick="app.filterTours('classic', this)">Classic Highlights (7 Days)</button>
+          <button class="filter-btn" onclick="app.filterTours('signature', this)">Complete Odyssey (10 Days)</button>
+          <button class="filter-btn" onclick="app.filterTours('luxury', this)">Ultra-Luxury & Safari (12 Days)</button>
+          <button class="filter-btn" onclick="app.filterTours('cultural', this)">Cultural Break (5 Days)</button>
+          <button class="filter-btn" onclick="app.filterTours('beach', this)">Coastal Waves & Whales (4 Days)</button>
+        </div>
+
+        <!-- Tours Grid -->
+        <div class="tours-grid" id="toursGrid">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+
+        <!-- Custom Request Footer Callout -->
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <p style="font-size: 1.05rem; color: #64748B; margin-bottom: 1rem;">
+            Looking for a different duration, specific dates, or a personalized route?
+          </p>
+          <button class="btn btn-primary" onclick="app.scrollToSection('customBuilder')">
+            <span>✨ Create Your Custom Sri Lanka Itinerary</span>
+            <span>&rarr;</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 12 – Customized Tour Builder (Interactive Wizard)
+         ========================================================================== -->
+    <section class="section builder-section" id="customBuilder">
+      <div class="container">
+        <div class="section-header" style="color:#ffffff;">
+          <span class="section-tag" style="color:#38BDF8;">Interactive Trip Planner</span>
+          <h2 style="color:#ffffff;">BUILD YOUR PERFECT SRI LANKA TRIP</h2>
+          <p style="color:rgba(255,255,255,0.8);">
+            Design your dream vacation in 60 seconds. Choose your must-visit spots, travel style, and comfort tier for an instant live estimate.
+          </p>
+        </div>
+
+        <div class="builder-box">
+          <!-- Wizard Stepper Indicator -->
+          <div class="builder-steps-indicator">
+            <div class="step-node active" onclick="app.setBuilderStep(1)">
+              <div class="step-circle">1</div>
+              <span class="step-title">Destinations</span>
+            </div>
+            <div class="step-node" onclick="app.setBuilderStep(2)">
+              <div class="step-circle">2</div>
+              <span class="step-title">Duration</span>
+            </div>
+            <div class="step-node" onclick="app.setBuilderStep(3)">
+              <div class="step-circle">3</div>
+              <span class="step-title">Who's Traveling</span>
+            </div>
+            <div class="step-node" onclick="app.setBuilderStep(4)">
+              <div class="step-circle">4</div>
+              <span class="step-title">Stays & Style</span>
+            </div>
+            <div class="step-node" onclick="app.setBuilderStep(5)">
+              <div class="step-circle">5</div>
+              <span class="step-title">Get Quote</span>
+            </div>
+          </div>
+
+          <!-- Step 1: Destination Selection -->
+          <div class="builder-step-content active" id="builderStep1">
+            <h3 style="font-size:1.3rem; margin-bottom:0.5rem; color:#ffffff;">Which destinations would you love to explore?</h3>
+            <p style="font-size:0.88rem; color:rgba(255,255,255,0.7); margin-bottom:1.5rem;">Click one or more destinations to include in your tailor-made route.</p>
+
+            <div class="builder-grid-select">
+              <div class="builder-choice-card selected" onclick="app.toggleBuilderDest('sigiriya', this)">
+                <div class="builder-choice-icon">🏰</div>
+                <h4>Sigiriya Rock</h4>
+                <p>Ancient Citadel & Caves</p>
+              </div>
+              <div class="builder-choice-card selected" onclick="app.toggleBuilderDest('kandy', this)">
+                <div class="builder-choice-icon">🛕</div>
+                <h4>Kandy</h4>
+                <p>Sacred Temple of the Tooth</p>
+              </div>
+              <div class="builder-choice-card selected" onclick="app.toggleBuilderDest('ella', this)">
+                <div class="builder-choice-icon">🚂</div>
+                <h4>Ella Highlands</h4>
+                <p>Nine Arch Bridge & Tea</p>
+              </div>
+              <div class="builder-choice-card" onclick="app.toggleBuilderDest('yala', this)">
+                <div class="builder-choice-icon">🐆</div>
+                <h4>Yala Safari</h4>
+                <p>Leopards & Wild Elephants</p>
+              </div>
+              <div class="builder-choice-card" onclick="app.toggleBuilderDest('galle', this)">
+                <div class="builder-choice-icon">⛵</div>
+                <h4>Galle Fort</h4>
+                <p>Dutch Ramparts & Beaches</p>
+              </div>
+              <div class="builder-choice-card" onclick="app.toggleBuilderDest('mirissa', this)">
+                <div class="builder-choice-icon">🐋</div>
+                <h4>Mirissa</h4>
+                <p>Blue Whales & Surfing</p>
+              </div>
+              <div class="builder-choice-card" onclick="app.toggleBuilderDest('nuwara-eliya', this)">
+                <div class="builder-choice-icon">🍃</div>
+                <h4>Nuwara Eliya</h4>
+                <p>Tea Estates & World's End</p>
+              </div>
+              <div class="builder-choice-card" onclick="app.toggleBuilderDest('trincomalee', this)">
+                <div class="builder-choice-icon">🏝️</div>
+                <h4>Trincomalee</h4>
+                <p>Pristine East Coast Coral</p>
+              </div>
+            </div>
+
+            <div class="builder-nav-btns">
+              <div></div>
+              <button class="btn btn-gold" onclick="app.setBuilderStep(2)">Next: Trip Duration &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Duration & Dates -->
+          <div class="builder-step-content" id="builderStep2">
+            <h3 style="font-size:1.3rem; margin-bottom:0.5rem; color:#ffffff;">How long is your ideal holiday?</h3>
+            <p style="font-size:0.88rem; color:rgba(255,255,255,0.7); margin-bottom:1.5rem;">Select your preferred journey length.</p>
+
+            <div class="builder-grid-select">
+              <div class="builder-choice-card" onclick="app.selectBuilderOption('duration', 5, this)">
+                <div class="builder-choice-icon">⚡</div>
+                <h4>5 Days</h4>
+                <p>Short Break / Highlights</p>
+              </div>
+              <div class="builder-choice-card selected" onclick="app.selectBuilderOption('duration', 7, this)">
+                <div class="builder-choice-icon">⭐</div>
+                <h4>7 Days</h4>
+                <p>Classic Week (Most Popular)</p>
+              </div>
+              <div class="builder-choice-card" onclick="app.selectBuilderOption('duration', 10, this)">
+                <div class="builder-choice-icon">🌟</div>
+                <h4>10 Days</h4>
+                <p>Complete Island Odyssey</p>
+              </div>
+              <div class="builder-choice-card" onclick="app.selectBuilderOption('duration', 14, this)">
+                <div class="builder-choice-icon">👑</div>
+                <h4>14+ Days</h4>
+                <p>Deep Immersion & Coast</p>
+              </div>
+            </div>
+
+            <div class="builder-nav-btns">
+              <button class="btn btn-outline-white" onclick="app.setBuilderStep(1)">&larr; Back</button>
+              <button class="btn btn-gold" onclick="app.setBuilderStep(3)">Next: Party Profile &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Traveling Party -->
+          <div class="builder-step-content" id="builderStep3">
+            <h3 style="font-size:1.3rem; margin-bottom:0.5rem; color:#ffffff;">Who is traveling on this journey?</h3>
+            <p style="font-size:0.88rem; color:rgba(255,255,255,0.7); margin-bottom:1.5rem;">We tailor vehicle sizes, pacing, and hotel choices accordingly.</p>
+
+            <div class="builder-grid-select">
+              <div class="builder-choice-card selected" onclick="app.selectBuilderOption('party', 'couple', this)">
+                <div class="builder-choice-icon">💑</div>
+                <h4>Couple / Honeymoon</h4>
+                <p>Romantic & Scenic</p>
+              </div>
+              <div class="builder-choice-card" onclick="app.selectBuilderOption('party', 'family', this)">
+                <div class="builder-choice-icon">👨‍👩‍👧‍👦</div>
+                <h4>Family with Kids</h4>
+                <p>Spacious Van & Child-Friendly</p>
+              </div>
+              <div class="builder-choice-card" onclick="app.selectBuilderOption('party', 'solo', this)">
+                <div class="builder-choice-icon">🎒</div>
+                <h4>Solo Traveler</h4>
+                <p>Private Guided Safety</p>
+              </div>
+              <div class="builder-choice-card" onclick="app.selectBuilderOption('party', 'friends', this)">
+                <div class="builder-choice-icon">🥂</div>
+                <h4>Friends Group</h4>
+                <p>Adventure & Shared Experiences</p>
+              </div>
+            </div>
+
+            <div class="builder-nav-btns">
+              <button class="btn btn-outline-white" onclick="app.setBuilderStep(2)">&larr; Back</button>
+              <button class="btn btn-gold" onclick="app.setBuilderStep(4)">Next: Accommodation &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 4: Accommodation Preference -->
+          <div class="builder-step-content" id="builderStep4">
+            <h3 style="font-size:1.3rem; margin-bottom:0.5rem; color:#ffffff;">What style of accommodation do you prefer?</h3>
+            <p style="font-size:0.88rem; color:rgba(255,255,255,0.7); margin-bottom:1.5rem;">All our properties are personally vetted for hygiene, service, and charm.</p>
+
+            <div class="builder-grid-select">
+              <div class="builder-choice-card" onclick="app.selectBuilderOption('hotel', 'standard', this)">
+                <div class="builder-choice-icon">🌿</div>
+                <h4>3★ Boutique & Eco</h4>
+                <p>Authentic, clean & characterful</p>
+              </div>
+              <div class="builder-choice-card selected" onclick="app.selectBuilderOption('hotel', 'superior', this)">
+                <div class="builder-choice-icon">✨</div>
+                <h4>4★ Superior Comfort</h4>
+                <p>Swimming pools, luxury spas & views</p>
+              </div>
+              <div class="builder-choice-card" onclick="app.selectBuilderOption('hotel', 'luxury', this)">
+                <div class="builder-choice-icon">💎</div>
+                <h4>5★ Luxury & Heritage</h4>
+                <p>Relais & Châteaux, Tea Trails & Villas</p>
+              </div>
+            </div>
+
+            <div class="builder-nav-btns">
+              <button class="btn btn-outline-white" onclick="app.setBuilderStep(3)">&larr; Back</button>
+              <button class="btn btn-gold" onclick="app.setBuilderStep(5)">Review & Request Proposal &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Step 5: Proposal Review & Submit -->
+          <div class="builder-step-content" id="builderStep5">
+            <h3 style="font-size:1.3rem; margin-bottom:0.5rem; color:#ffffff;">Your Customized Itinerary Summary</h3>
+            <p style="font-size:0.88rem; color:rgba(255,255,255,0.7); margin-bottom:1.5rem;">
+              Based on your selections, here is an instant live quote estimate. Enter your contact details to receive the full itemized day-by-day plan.
+            </p>
+
+            <div class="builder-summary-card">
+              <div>
+                <div style="font-size:0.82rem; color:rgba(255,255,255,0.7); text-transform:uppercase;">Estimated Cost Per Person</div>
+                <div class="builder-estimate-price" id="builderEstimatePrice">$ 1,085</div>
+                <div style="font-size:0.8rem; color:rgba(255,255,255,0.65);">Includes private car, fuel, tolls, chauffeur quarters, selected hotels & daily breakfast.</div>
+              </div>
+              <span class="badge badge-gold" style="font-size:0.82rem;">SLTDA Protected Rate</span>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; margin-top:1.5rem;">
+              <div class="form-group">
+                <label class="form-label" style="color:#ffffff;">Your Name *</label>
+                <input type="text" id="customTripName" class="form-control" placeholder="e.g. Eleanor Vance">
+              </div>
+              <div class="form-group">
+                <label class="form-label" style="color:#ffffff;">Email Address *</label>
+                <input type="email" id="customTripEmail" class="form-control" placeholder="eleanor@example.com">
+              </div>
+            </div>
+
+            <div class="builder-nav-btns">
+              <button class="btn btn-outline-white" onclick="app.setBuilderStep(4)">&larr; Back</button>
+              <button class="btn btn-gold btn-lg" onclick="app.submitCustomTripRequest()">
+                <span>Request My Custom Trip</span>
+                <span>✨</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 09 – Hotels & Boutique Luxury Stays
+         ========================================================================== -->
+    <section class="section" id="hotelsSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Sanctuaries of Ceylon</span>
+          <h2>Handpicked Hotels & Luxury Resorts</h2>
+          <p>From colonial converted tea factories and mountain eco-lodges to cliffside oceanfront resorts.</p>
+        </div>
+
+        <!-- Hotel Filter Nav -->
+        <div class="filter-nav" id="hotelFilterNav">
+          <button class="filter-btn active" onclick="app.filterHotels('all', this)">All Stays</button>
+          <button class="filter-btn" onclick="app.filterHotels('eco', this)">Eco & Mountain Lodges</button>
+          <button class="filter-btn" onclick="app.filterHotels('heritage', this)">Colonial Heritage</button>
+          <button class="filter-btn" onclick="app.filterHotels('beachfront', this)">Luxury Beachfront</button>
+          <button class="filter-btn" onclick="app.filterHotels('wildlife', this)">Safari Glamping</button>
+        </div>
+
+        <!-- Hotels Grid -->
+        <div class="hotels-grid" id="hotelsGrid">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 10 – Activities & Experiences Marketplace
+         ========================================================================== -->
+    <section class="section section-alt" id="activitiesSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Unforgettable Moments</span>
+          <h2>Curated Sri Lankan Experiences</h2>
+          <p>Immerse yourself in authentic island adventures, private wildlife safaris, and rich cultural traditions.</p>
+        </div>
+
+        <!-- Experience Filter Nav -->
+        <div class="filter-nav" id="actFilterNav">
+          <button class="filter-btn active" onclick="app.filterActivities('all', this)">All Experiences</button>
+          <button class="filter-btn" onclick="app.filterActivities('adventure', this)">Adventure & Hiking</button>
+          <button class="filter-btn" onclick="app.filterActivities('wildlife', this)">Wildlife Safaris</button>
+          <button class="filter-btn" onclick="app.filterActivities('nature', this)">Scenic Trains & Tea</button>
+          <button class="filter-btn" onclick="app.filterActivities('beach', this)">Ocean & Whales</button>
+          <button class="filter-btn" onclick="app.filterActivities('culture', this)">Culinary & Culture</button>
+        </div>
+
+        <!-- Activities Grid -->
+        <div class="activities-grid" id="activitiesGrid">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 11 – Transportation & Airport Transfers
+         ========================================================================== -->
+    <section class="section" id="transportSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Private Chauffeur Fleet</span>
+          <h2>Comfortable Transportation & Airport Transfers</h2>
+          <p>Travel across Sri Lanka in modern, fully insured, air-conditioned vehicles accompanied by licensed English-speaking chauffeur-guides.</p>
+        </div>
+
+        <div class="transport-tabs-container">
+          <!-- Fleet Showcase Grid -->
+          <h3 style="font-size:1.4rem; color:var(--primary-navy); margin-bottom:0.4rem;">Our Private Chauffeur Fleet</h3>
+          <p style="font-size:0.9rem; color:#64748B;">All rentals include fuel, expressway tolls, passenger insurance, and chauffeur lodging.</p>
+
+          <div class="vehicle-fleet-grid" id="vehiclesGrid">
+            <!-- Dynamically populated by js/app.js -->
+          </div>
+
+          <!-- Interactive Airport Transfer Calculator -->
+          <div class="transfer-calculator-box">
+            <h4 style="font-size:1.2rem; color:var(--primary-navy); margin-bottom:0.4rem;">
+              ✈️ Colombo Airport (BIA / CMB) Fixed-Rate Transfer Calculator
+            </h4>
+            <p style="font-size:0.85rem; color:#64748B; margin-bottom:1.2rem;">
+              Guaranteed door-to-door flat fares. Your private driver meets you inside the arrivals hall holding a personalized name board.
+            </p>
+
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; align-items:flex-end;">
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label">Pickup Location</label>
+                <select id="transferPickup" class="form-control">
+                  <option>Bandaranaike International Airport (CMB / BIA)</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label">Destination City / Resort</label>
+                <select id="transferDropoff" class="form-control">
+                  <option value="Colombo">Colombo City Center (45 mins)</option>
+                  <option value="Galle">Galle / Unawatuna (2.0 hrs)</option>
+                  <option value="Bentota">Bentota / Beruwala (1.5 hrs)</option>
+                  <option value="Kandy">Kandy Hill Capital (3.0 hrs)</option>
+                  <option value="Sigiriya">Sigiriya / Dambulla (3.5 hrs)</option>
+                  <option value="Mirissa">Mirissa / Weligama (2.5 hrs)</option>
+                  <option value="Ella">Ella Highlands (5.0 hrs)</option>
+                  <option value="Yala">Yala / Tissamaharama (4.5 hrs)</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label">Vehicle Preference</label>
+                <select id="transferVehicle" class="form-control">
+                  <option value="sedan">Luxury Sedan (1-3 Pax + 2 Bags)</option>
+                  <option value="van">High-Roof Van (4-8 Pax + 6 Bags)</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="transferCostResult" style="margin-top:1.4rem; padding-top:1.2rem; border-top:1px dashed rgba(0, 86, 150, 0.25);">
+              <!-- Populated by js/app.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 13 – Sri Lanka Travel Guide & SEO Insights
+         ========================================================================== -->
+    <section class="section section-alt" id="travelGuides">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Island Wisdom & Tips</span>
+          <h2>Sri Lanka Travel Guide & Expert Insights</h2>
+          <p>Written by native travel specialists to help you navigate visas, seasonal weather patterns, and cultural wonders.</p>
+        </div>
+
+        <div class="articles-grid" id="articlesGrid">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 15 & 16 – Reviews & Why Travel With KCSTours
+         ========================================================================== -->
+    <section class="section" id="reviewsSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Trust & Experiences</span>
+          <h2>What International Travelers Say</h2>
+          <p>Verified reviews from travelers who trusted KCSTours to design their Sri Lankan adventures.</p>
+        </div>
+
+        <div class="reviews-grid" id="reviewsGrid">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Travel With KCSTours Trust Pillars -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="color:#38BDF8;">The KCSTours Difference</span>
+          <h2>Why International Travelers Choose Us</h2>
+          <p>We blend deep local Sri Lankan roots with international service standards, safety, and reliability.</p>
+        </div>
+
+        <div class="trust-grid">
+          <div class="trust-card">
+            <div class="trust-icon-wrap">🇱🇰</div>
+            <h3>Local Sri Lankan Expertise</h3>
+            <p>Our destination specialists are born and raised in Sri Lanka. We know every hidden viewpoint, secluded beach, and secret waterfall.</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon-wrap">🛡️</div>
+            <h3>SLTDA Accredited & Insured</h3>
+            <p>Officially licensed by the Sri Lanka Tourism Development Authority. All vehicles carry comprehensive commercial passenger insurance.</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon-wrap">🧭</div>
+            <h3>100% Tailor-Made Freedom</h3>
+            <p>No cookie-cutter schedules or bus groups. Travel at your own pace with private chauffeur-guides who adapt to your preferences.</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon-wrap">💎</div>
+            <h3>Transparent Honest Pricing</h3>
+            <p>Zero hidden fuel surcharges, driver accommodation bills, or surprise tolls. What you are quoted is exactly what you pay.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 27 – FAQ System
+         ========================================================================== -->
+    <section class="section section-alt" id="faqSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Got Questions?</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about planning, booking, and enjoying your holiday in Sri Lanka.</p>
+        </div>
+
+        <!-- FAQ Category Filter -->
+        <div class="filter-nav" id="faqFilterNav">
+          <button class="filter-btn active" onclick="app.filterFaqs('all', this)">All Questions</button>
+          <button class="filter-btn" onclick="app.filterFaqs('booking', this)">Bookings & Deposits</button>
+          <button class="filter-btn" onclick="app.filterFaqs('transport', this)">Drivers & Chauffeurs</button>
+          <button class="filter-btn" onclick="app.filterFaqs('visas', this)">Visas & Entry</button>
+          <button class="filter-btn" onclick="app.filterFaqs('cancellation', this)">Cancellations</button>
+        </div>
+
+        <div class="faq-container" id="faqList">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 40 – Newsletter & Lead Capture Banner
+         ========================================================================== -->
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <div class="cta-banner">
+          <div class="cta-text">
+            <h2>Ready to Explore Sri Lanka?</h2>
+            <p>Subscribe to receive secret travel itineraries, seasonal discounts, and weather insights.</p>
+          </div>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('🎉 Thank you for subscribing to KCSTours Ceylon dispatch!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-gold">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 25 – About KCSTours Credibility Section
+         ========================================================================== -->
+    <section class="section" id="aboutSection" style="background:#ffffff; border-top:1px solid #E2E8F0;">
+      <div class="container">
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:3.5rem; align-items:center;">
+          <div>
+            <span class="section-tag" style="color:var(--primary-blue); font-weight:700;">About KCSTours</span>
+            <h2 style="font-size:2.2rem; margin:0.5rem 0 1.2rem 0;">Your Trusted Sri Lanka Tourism Partner</h2>
+            <p style="font-size:1.02rem; color:#475569; line-height:1.7; margin-bottom:1rem;">
+              KCSTours was founded with a singular mission: to provide discerning international travelers with an authentic, seamless, and deeply memorable Sri Lankan journey.
+            </p>
+            <p style="font-size:0.95rem; color:#64748B; line-height:1.7; margin-bottom:1.5rem;">
+              We steer away from rigid bus schedules and rushed tour groups. Instead, we offer private chauffeured voyages where you set the tempo—whether pausing for sweet king coconut by a roadside plantation or spending extra time watching elephants at a forest lake.
+            </p>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; margin-bottom:1.5rem;">
+              <div>
+                <strong style="font-size:1.6rem; color:#002D59;">10+ Years</strong>
+                <div style="font-size:0.85rem; color:#64748B;">Island Tour Experience</div>
+              </div>
+              <div>
+                <strong style="font-size:1.6rem; color:#00A3C4;">50+ Fleet</strong>
+                <div style="font-size:0.85rem; color:#64748B;">Pristine Modern Vehicles</div>
+              </div>
+            </div>
+            <button class="btn btn-primary" onclick="app.scrollToSection('contactSection')">Get In Touch With Us</button>
+          </div>
+
+          <div style="position:relative;">
+            <img src="https://images.unsplash.com/photo-1546708973-b339540b5162?auto=format&fit=crop&w=800&q=80" alt="Scenic Ella Train" style="border-radius:20px; box-shadow:var(--shadow-xl); width:100%;">
+            <div style="position:absolute; bottom:-1.5rem; left:-1.5rem; background:#ffffff; padding:1.2rem; border-radius:14px; box-shadow:var(--shadow-lg); border:1px solid #E2E8F0; max-width:240px;">
+              <div style="font-size:1.8rem; font-weight:800; color:#F59E0B;">★ 4.95</div>
+              <div style="font-size:0.8rem; color:#64748B;">Average traveler satisfaction across 1,400+ custom tours.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 24 – Contact & Inquiry Form
+         ========================================================================== -->
+    <section class="section section-alt" id="contactSection">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">24/7 Island Concierge</span>
+          <h2>Connect With Our Travel Specialists</h2>
+          <p>Have questions about your itinerary, visa, or custom requirements? We are here to assist 24 hours a day.</p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:2.5rem; background:#ffffff; border-radius:20px; padding:2.5rem; box-shadow:var(--shadow-lg); border:1px solid #E2E8F0;">
+          <!-- Contact Details -->
+          <div>
+            <h3 style="font-size:1.4rem; color:#002D59; margin-bottom:1rem;">We'd Love to Hear From You</h3>
+            <p style="font-size:0.92rem; color:#64748B; margin-bottom:1.8rem;">
+              Reach out directly via WhatsApp for an immediate reply or send us your travel questions using the form.
+            </p>
+
+            <div style="display:flex; flex-direction:column; gap:1.2rem;">
+              <div style="display:flex; gap:1rem; align-items:center;">
+                <div class="icon-btn" style="background:#EBF4FC;">📍</div>
+                <div>
+                  <strong style="color:#002D59; font-size:0.95rem;">Headquarters:</strong>
+                  <div style="font-size:0.85rem; color:#64748B;">Colombo & Negombo, Sri Lanka</div>
+                </div>
+              </div>
+
+              <div style="display:flex; gap:1rem; align-items:center;">
+                <div class="icon-btn" style="background:#E8F5E9; color:#10B981;">💬</div>
+                <div>
+                  <strong style="color:#002D59; font-size:0.95rem;">Direct WhatsApp:</strong>
+                  <div style="font-size:0.85rem; color:#64748B;">+94 77 123 4567 (Instant response)</div>
+                </div>
+              </div>
+
+              <div style="display:flex; gap:1rem; align-items:center;">
+                <div class="icon-btn" style="background:#FEF3C7; color:#B45309;">✉️</div>
+                <div>
+                  <strong style="color:#002D59; font-size:0.95rem;">Email Support:</strong>
+                  <div style="font-size:0.85rem; color:#64748B;">info@kcstours.com / reservations@kcstours.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Contact Form -->
+          <form onsubmit="event.preventDefault(); showToast('🎉 Message sent! Our team will contact you shortly.'); this.reset();">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Full Name *</label>
+                <input type="text" class="form-control" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address *</label>
+                <input type="email" class="form-control" placeholder="Your email" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Country of Residence</label>
+                <input type="text" class="form-control" placeholder="e.g. UK, Germany, USA">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Expected Travel Month</label>
+                <input type="text" class="form-control" placeholder="e.g. December 2026">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Your Message or Custom Tour Ideas</label>
+              <textarea class="form-control" rows="3" placeholder="Tell us what you'd like to experience in Sri Lanka..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              <span>Send Travel Inquiry</span>
+              <span>&rarr;</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Section 26 – Comprehensive Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Info -->
+        <div class="footer-col footer-brand">
+          <img src="ChatGPT Image Sep 29, 2026, 02_27_34 PM.png" alt="KCSTours" class="brand-logo-img">
+          <p>
+            KCSTours is Sri Lanka’s premier digital tourism partner, offering bespoke chauffeur-guided itineraries, boutique stays, wildlife expeditions, and airport transfers.
+          </p>
+          <div style="font-size:0.82rem; color:#94A3B8;">
+            SLTDA Registration: SLTDA/SQA/TA/00892<br>
+            Sri Lanka Tourism Development Authority
+          </div>
+        </div>
+
+        <!-- Explore Links -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#destinations">Popular Destinations</a></li>
+            <li><a href="#toursSection">Tour Packages</a></li>
+            <li><a href="#hotelsSection">Hotels & Villas</a></li>
+            <li><a href="#activitiesSection">Experiences</a></li>
+            <li><a href="#transportSection">Private Vehicles</a></li>
+            <li><a href="#customBuilder">Custom Trip Builder</a></li>
+          </ul>
+        </div>
+
+        <!-- Travel Resources -->
+        <div class="footer-col">
+          <h4>Travel Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#travelGuides">Sri Lanka Travel Guide</a></li>
+            <li><a href="#travelGuides">Visa (ETA) Requirements</a></li>
+            <li><a href="#travelGuides">Best Time to Visit</a></li>
+            <li><a href="#faqSection">Frequently Asked Questions</a></li>
+            <li><a href="#reviewsSection">Customer Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Company & Legal -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#aboutSection">About KCSTours</a></li>
+            <li><a href="#contactSection">Contact Concierge</a></li>
+            <li><a href="#termsModal" onclick="event.preventDefault(); showToast('Terms: 100% Refundable up to 21 days before departure.');">Terms & Conditions</a></li>
+            <li><a href="#privacyModal" onclick="event.preventDefault(); showToast('Privacy Policy: Customer data is 256-bit SSL encrypted.');">Privacy Policy</a></li>
+            <li><a href="#cancelModal" onclick="event.preventDefault(); showToast('Cancellation Policy: Free rescheduling at zero cost.');">Cancellation Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Hours -->
+        <div class="footer-col">
+          <h4>Contact & Support</h4>
+          <p style="margin-bottom:0.6rem;">📞 +94 77 123 4567</p>
+          <p style="margin-bottom:0.6rem;">💬 WhatsApp: 24/7 Island Concierge</p>
+          <p style="margin-bottom:0.6rem;">✉️ info@kcstours.com</p>
+          <p style="margin-bottom:1.2rem;">📍 Colombo • Kandy • Galle • Negombo</p>
+          
+          <div class="social-links">
+            <a href="#" class="social-icon" title="Facebook">FB</a>
+            <a href="#" class="social-icon" title="Instagram">IG</a>
+            <a href="#" class="social-icon" title="YouTube">YT</a>
+            <a href="#" class="social-icon" title="TikTok">TK</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 KCSTours. Sri Lanka Tourism Partner. All rights reserved.
+        </div>
+        <div style="display:flex; gap:1.2rem;">
+          <span>🔒 256-bit SSL Secure Checkout</span>
+          <span>💳 Visa • MasterCard • Amex • Bank Wire</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Tour Details Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="tourModal" onclick="if(event.target === this) app.closeModal('tourModal')">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" onclick="app.closeModal('tourModal')" title="Close">&times;</button>
+      <div id="tourModalContent">
+        <!-- Dynamically injected by js/app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Travel Guide Article Reading Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="articleModal" onclick="if(event.target === this) app.closeModal('articleModal')">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" onclick="app.closeModal('articleModal')" title="Close">&times;</button>
+      <div id="articleModalContent">
+        <!-- Dynamically injected by js/app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Multi-Step Booking Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="bookingModal" onclick="if(event.target === this) app.closeModal('bookingModal')">
+    <div class="modal-dialog booking-modal-dialog">
+      <button class="modal-close-btn" onclick="app.closeModal('bookingModal')" title="Close">&times;</button>
+      <div id="bookingModalContent">
+        <!-- Dynamically injected by js/app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Wishlist Slide-Out Drawer
+       ========================================================================== -->
+  <div class="modal-overlay" id="wishlistOverlay" onclick="app.closeWishlist()" style="display:none; z-index:2100;"></div>
+  <aside class="wishlist-drawer" id="wishlistDrawer">
+    <div class="drawer-header">
+      <h3 style="font-size:1.2rem; color:var(--primary-navy); display:flex; align-items:center; gap:0.4rem;">
+        <span>❤️</span> Saved Favorites
+      </h3>
+      <button class="modal-close-btn" style="position:static;" onclick="app.closeWishlist()">&times;</button>
+    </div>
+    <div class="drawer-body" id="wishlistDrawerItems">
+      <!-- Populated by js/app.js -->
+    </div>
+    <div style="padding:1.2rem; border-top:1px solid #E2E8F0;">
+      <button class="btn btn-primary" style="width:100%;" onclick="app.closeWishlist(); app.scrollToSection('customBuilder')">Plan Trip with Saved Items</button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Global Search Overlay Modal
+       ========================================================================== -->
+  <div class="modal-overlay" id="searchModal" onclick="if(event.target === this) app.closeModal('searchModal')">
+    <div class="modal-dialog" style="max-width:650px;">
+      <button class="modal-close-btn" onclick="app.closeModal('searchModal')">&times;</button>
+      <div style="padding:2rem;">
+        <h3 style="font-size:1.3rem; margin-bottom:1rem; color:var(--primary-navy);">Search KCSTours Sri Lanka</h3>
+        <div style="position:relative; margin-bottom:1.5rem;">
+          <input type="text" id="globalSearchInput" class="form-control" placeholder="Type a destination, tour, hotel, or activity (e.g. Sigiriya, Safari, Train)..." style="font-size:1.1rem; padding:0.85rem 1.2rem;">
+        </div>
+        <div id="globalSearchResults" style="max-height:50vh; overflow-y:auto;">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Floating WhatsApp Concierge Widget
+       ========================================================================== -->
+  <div class="whatsapp-widget">
+    <div class="whatsapp-popup" id="whatsappPopup">
+      <div class="wa-popup-header">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Concierge Roshan" class="wa-popup-avatar">
+        <div>
+          <strong style="font-size:0.95rem;">Roshan • KCSTours Concierge</strong>
+          <div style="font-size:0.75rem; opacity:0.85;">Online • Typically replies in 2 mins</div>
+        </div>
+      </div>
+      <div class="wa-popup-body">
+        <div class="wa-bubble">
+          Ayubowan! 🙏 Looking for advice on dates, hotels, or custom itineraries in Sri Lanka? How can I help you today?
+        </div>
+        <div class="wa-quick-chips">
+          <button class="wa-chip" onclick="window.open('https://wa.me/94771234567?text=Hello%20KCSTours,%20can%20you%20help%20me%20plan%20a%20Sri%20Lanka%20itinerary?', '_blank')">
+            💬 Help me plan a custom itinerary
+          </button>
+          <button class="wa-chip" onclick="window.open('https://wa.me/94771234567?text=Hello%20KCSTours,%20what%20is%20the%20best%20season%20to%20visit%20Sri%20Lanka?', '_blank')">
+            ☀️ What is the best season to visit?
+          </button>
+          <button class="wa-chip" onclick="window.open('https://wa.me/94771234567?text=Hello%20KCSTours,%20I%20want%20to%20book%20a%20private%20airport%20transfer', '_blank')">
+            🚗 Book private airport transfer
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button class="whatsapp-btn" id="whatsappBtn" title="Chat with Sri Lanka Destination Specialist on WhatsApp">
+      <span>💬</span>
+      <span class="online-pulse"></span>
+    </button>
+  </div>
+
+  <!-- ==========================================================================
+       Mobile Bottom Sticky Action Bar
+       ========================================================================== -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-inner">
+      <button class="btn btn-outline btn-sm" onclick="window.open('tel:+94771234567')">
+        📞 Call Us
+      </button>
+      <button class="btn btn-primary btn-sm" style="background:#25D366; border-color:#25D366;" onclick="window.open('https://wa.me/94771234567?text=Hello%20KCSTours', '_blank')">
+        💬 WhatsApp
+      </button>
+      <button class="btn btn-gold btn-sm" onclick="app.scrollToSection('customBuilder')">
+        ✨ Plan Trip
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Admin CMS Management Portal (Overlay Demo)
+       ========================================================================== -->
+  <div class="admin-overlay" id="adminOverlay">
+    <div class="container" style="max-width:1100px;">
+      <div class="admin-header">
+        <div>
+          <span class="badge badge-teal">KCSTours Management</span>
+          <h2 style="color:#ffffff; margin-top:0.3rem;">Operations & Booking Control Panel</h2>
+        </div>
+        <button class="btn btn-outline-white btn-sm" onclick="app.toggleAdmin()">✕ Close CMS Demo</button>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="admin-metrics-grid">
+        <div class="admin-metric-card">
+          <div style="font-size:0.8rem; color:#94A3B8; text-transform:uppercase;">Today's Inquiries</div>
+          <div style="font-size:2rem; font-weight:800; color:#38BDF8; margin-top:0.4rem;">14</div>
+          <div style="font-size:0.75rem; color:#10B981; margin-top:0.2rem;">↑ +28% vs yesterday</div>
+        </div>
+        <div class="admin-metric-card">
+          <div style="font-size:0.8rem; color:#94A3B8; text-transform:uppercase;">Upcoming Confirmed Tours</div>
+          <div style="font-size:2rem; font-weight:800; color:#10B981; margin-top:0.4rem;">38</div>
+          <div style="font-size:0.75rem; color:#94A3B8; margin-top:0.2rem;">Next 30 days</div>
+        </div>
+        <div class="admin-metric-card">
+          <div style="font-size:0.8rem; color:#94A3B8; text-transform:uppercase;">Active Fleet Assignments</div>
+          <div style="font-size:2rem; font-weight:800; color:#F59E0B; margin-top:0.4rem;">22</div>
+          <div style="font-size:0.75rem; color:#94A3B8; margin-top:0.2rem;">Chauffeur-guides deployed</div>
+        </div>
+        <div class="admin-metric-card">
+          <div style="font-size:0.8rem; color:#94A3B8; text-transform:uppercase;">Monthly Volume (USD)</div>
+          <div style="font-size:2rem; font-weight:800; color:#ffffff; margin-top:0.4rem;">$ 94,500</div>
+          <div style="font-size:0.75rem; color:#10B981; margin-top:0.2rem;">↑ Target exceeded</div>
+        </div>
+      </div>
+
+      <!-- Recent Bookings Table -->
+      <h3 style="font-size:1.2rem; color:#ffffff; margin-bottom:1rem;">Recent Direct Bookings & Custom Inquiries</h3>
+      <div style="overflow-x:auto;">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Booking Ref</th>
+              <th>Lead Guest</th>
+              <th>Itinerary / Tour</th>
+              <th>Dates</th>
+              <th>Pax</th>
+              <th>Total</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="adminBookingsTable">
+            <!-- Dynamically populated -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
